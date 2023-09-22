@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Custom Shop</title>
+</head>
+
+<body>
+    <header>
+        <a href=""><img
+                src="./images/kisspng-blog-computer-icons-vector-graphics-favicon-clip-a-5b661b47621766.6069185215334183114018.png"
+                alt="logo"></a>
+        <p>Люди перестають мислити, як перестають читати</p>
+    </header>
+    <section class="shop">
+        <aside class="categories">
+            <ul class="categories_list">
+                <li class="category">Художня література</li>
+                <li class="category">Дитяча література</li>
+                <li class="category">Пізнавальна література</li>
+            </ul>
+        </aside>
+        <div class="products">
+            <ul class="product-list"></ul>
+        </div>
+        <div class="product-details">
+            <h2>Деталі</h2>
+            <img class="product-image" src="" alt="продукт">
+            <p>Назва: <span class="product-name"></span></p>
+            <p>Ціна: <span class="product-price"></span> грн</p>
+            <p>Наявність: <span class="product-status"></span> </p>
+            <button class="buy-button">Придбати</button>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <form class="form" id="modalForm" action="">
+                    <div class="rowFirst">
+                        <div class="fullName">
+                            <input required placeholder="ПІБ*" size="40" minlength="2" maxlength="60"
+                                class="text fullNameInput" type="text">
+                        </div>
+
+                    </div>
+
+                    <div class="rowSecond">
+                        <select placeholder="Select your city*" name="cities" id="city-select">
+                            <option value="">Місто</option>
+                            <option value="Київ">Київ</option>
+                            <option value="Дніпро">Дніпро</option>
+                            <option value="Запоріжжя">Запоріжжя</option>
+                            <option value="Житомир">Житомир</option>
+                            <option value="Львів">Львів</option>
+                            <option value="Івано-Франківськ">Івано-Франківськ</option>
+                            <option value="Донецьк">Донецьк</option>
+                            <option value="Херсон">Херсон</option>
+                            <option value="Харків">Харків</option>
+                        </select>
+                    </div>
+
+                    <div class="rowThird">
+                        <div class="address">
+                            <input required placeholder="Склад Нової пошти*" size="40" minlength="2" maxlength="60"
+                                class="text addressInput" type="text">
+                        </div>
+                    </div>
+
+                    <div class="rowFource">
+                        <div class="pay">
+                            <div class="rowFource_wrapper">
+                                <input type="radio" id="contactChoice1" name="contact" value="Післяплатa" />
+                                <label for="contactChoice1">Післяплатa </label>
+                            </div>
+                            <div class="rowFource_wrapper">
+                                <input type="radio" id="contactChoice2" name="contact" value="Банківська картка" />
+                                <label for="contactChoice2">Банківська картка</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="rowFifce">
+                        <div class="counter">
+                            <input required placeholder="Кількість продукції, що купується*" size="40" minlength="2"
+                                maxlength="60" class="text counterInput" type="number">
+                        </div>
+                    </div>
+
+                    <div class="rowSix">
+                        <textarea placeholder="Побажання або Ваш коментар" cols="30" rows="10"></textarea>
+                    </div>
+
+
+                    <div class="buttonWrapper">
+                        <button type="submit">Надіслати</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="userTable"></div>
+    </section>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/table.js"></script>
+</body>
+
+</html>
